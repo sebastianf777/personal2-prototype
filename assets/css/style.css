@@ -1435,9 +1435,15 @@ display: block;
   .mis-servicios .imagen-servicios {
     margin: 0;
   }
-  .mis-servicios .imagen-servicios .img-desktop {
-    display: none;
+  .mis-servicios .imagen-servicios .items {
+    margin: 0 0 20px;
+}
+  .imagen-servicios{
+    flex-direction: column;
   }
+  /* .mis-servicios .imagen-servicios .img-desktop {
+    display: none;
+  } */
   .mis-servicios .imagen-servicios .img-mobile {
     display: block;
     width: 100%;
@@ -1729,9 +1735,7 @@ display: block;
   .mis-servicios .imagen-servicios {
     margin: 0 2%;
   }
-  .mis-servicios .imagen-servicios .img-desktop {
-    display: none;
-  }
+
   .mis-servicios .imagen-servicios .img-mobile {
     display: block;
     width: 100%;

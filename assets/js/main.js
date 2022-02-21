@@ -82,8 +82,11 @@
       })
 
       this.classList.add('active')
-      select('#logo-responsive').classList.toggle('logo-responsive-hide')
+      if (e.target.classList.contains('navbar-link') == true) {
+        select('#logo-responsive').classList.toggle('logo-responsive-hide')
       select('#logo-responsive').classList.toggle('logo-responsive-show')
+      }
+     
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
