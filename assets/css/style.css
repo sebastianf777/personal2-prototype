@@ -380,9 +380,7 @@ section.section-show {
   top: 130px;
   bottom: auto;
   opacity: 1;
-  padding-bottom: 45px;
-  /* opacity: 0;
-  top: 200px; */
+
 }
 section .container {
   background: var(--blanco);
@@ -558,6 +556,7 @@ height: 27px;
   background: rgba(237, 222, 214, 1);
   display: flex;
   align-items: center;
+  margin-bottom: 70px;
 }
 .titulo .izquierda {
   align-items: center;
@@ -739,6 +738,7 @@ height: 27px;
 .cursos-online {
   background: rgba(201, 177, 165, 1);
   display: flex;
+  margin-bottom: 78px;
 }
 .cursos-online .izquierda {
   align-items: center;
@@ -811,7 +811,7 @@ height: 27px;
 }
 .dibujo {
   position: absolute;
-  top: 1548px;
+  top: 1625px;
 }
 
 /*--------------------------------------------------------------
@@ -1202,6 +1202,121 @@ label{
   color: #945B3E;
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #945B3E;
+  padding-top: 46px;
+  padding-bottom: 35px;
+  padding-left: 200px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+  padding: 3% 0%;
+}
+
+.footer .izquierda{
+  margin-left: 15%;
+}
+
+.footer .izquierda img {
+  height: 95px;
+  width: 95px;
+  margin-bottom: 30px;
+}
+.footer .izquierda .nombre-contacto {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 4%;
+}
+.footer .izquierda p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin: 0%;
+}
+.footer .centro p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 240%;
+  color: #FFFFFF;
+  margin: 0%;
+}
+.footer .derecha {
+  width: 33%;
+}
+.footer .derecha .ordenar-iconos {
+  display: flex;
+  align-items: center;
+}
+
+.footer .derecha .redes {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 240%;
+  color: #FFFFFF;
+  margin: 0%;
+}
+.footer .derecha p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 240%;
+  color: #FFFFFF;
+  margin: 0 0 0 10px;
+}
+.footer .derecha .copyright {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: 40px 0 0 0;
+}
+
+.facebook-img{
+  width: 27px;
+  filter: invert(1);
+}
+.instagram-img{
+  width: 22px;
+  margin: 0 2.5px;
+}
+/* .footer {
+  display: flex;
+  background: #945B3E;
+  padding: 5% 3%;
+}
+.footer .izquierda {
+  width: 50%;
+}
+.footer .centro {
+  width: 50%;
+}
+.footer .centro p {
+  text-align: end;
+}
+.footer .derecha {
+  width: 100%;
+  display: block;
+} */
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1339,7 +1454,6 @@ display: block;
   }
   .titulo {
     display: block;
-    height: 424px;
   }
   .titulo .izquierda {
     margin-left: 0;
@@ -1352,6 +1466,9 @@ display: block;
     display: block;
     width: 100%;
   }
+  .titulo .derecha{
+    position: relative;
+  }
   .titulo .derecha .img-desktop {
     display: none;
   }
@@ -1359,7 +1476,7 @@ display: block;
     position: absolute;
     width: 344px;
     height: 128px;
-    top: 401px;
+    top: -150px;
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     font-family: Prata;
@@ -1390,6 +1507,7 @@ display: block;
   }
   .sobre-mi .derecha {
     margin: 0;
+    position: relative;
   }
   .sobre-mi .derecha .titulo-sobre-mi {
     display: none;
@@ -1402,7 +1520,7 @@ display: block;
     position: absolute;
     width: 100%;
     left: 251px;
-    top: 781px;
+    top: -120px;
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     padding: 1% 5%;
@@ -1468,8 +1586,7 @@ display: block;
     display: flex;
     position: absolute;
     left: 0%;
-    right: 45.28%;
-    top: 94%;
+    top: 25px;
     background: #EDDED6;
     border-radius: 0px 30px 30px 0px;
     width: 227px;
@@ -1487,6 +1604,9 @@ display: block;
   }
   .cursos-online .izquierda .home_link ul li a {
     display: none;
+  }
+  .cursos-online .derecha{
+    display: block;
   }
   .cursos-online .derecha .img-desktop {
     display: none;
@@ -1531,35 +1651,18 @@ display: block;
     height: 100px;
     margin-top: 30px;
 }
-  /* .complete-section {
-    width: 100%;
-    margin: 0 16px;
-  } */
+
   .complete-section a {
     width: 100%;
   }
   .row {
     margin: 0;
   }
-  /* .card {
-    width: auto;
-    min-width: 150px;
-    margin-bottom: 16px;
-    height: 270px;
-    position: relative;
-  } */
- 
-  /* .services .icon-box,
-  .courses .icon-box {
-    position: absolute;
-    padding-top: 0;
-    height: auto;
-    bottom: 0;
-  } */
-  .section-show {
+  
+  /* .section-show {
     justify-content: center;
     display: flex;
-  }
+  } */
   section .container {
     padding: 16px 16px 0 16px;
     margin: 0px 0px 0px -7px;
@@ -1648,7 +1751,7 @@ display: block;
     position: absolute;
     width: 276px;
     height: 100px;
-    top: calc(48vw - 20px);;
+    top: -110px;
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     font-family: 'Prata';
@@ -1693,7 +1796,7 @@ display: block;
     position: absolute;
     width: 100%;
     left: 56px;
-    top: calc(-23vw - 20px);
+    top: -100px;
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     padding: 1% 5%;
@@ -1718,14 +1821,12 @@ display: block;
     align-items: center;
     color: #2E2E2E;
   }
-  /* .sobre-mi .derecha button {
-    display: none;
-  } */
+
   .sobre-mi .home_link ul li a {
     display: none;
   }
   .mis-servicios {
-    padding: 2% 0;
+    padding-bottom: 2%;
     margin: auto;
   }
   .mis-servicios h2 {
@@ -1738,7 +1839,7 @@ display: block;
     margin: 5%;
   }
   .mis-servicios .imagen-servicios {
-    margin: 0 2%;
+    margin: 0;
   }
 
   .mis-servicios .imagen-servicios .img-mobile {
@@ -1754,6 +1855,9 @@ display: block;
     line-height: 19px;
     color: #2E2E2E;
     width: 250px;
+  }
+  .img-desktop{
+    width: 90vw;
   }
   .dibujo {
     display: none;
@@ -1789,6 +1893,7 @@ display: block;
   .cursos-online .izquierda .home_link ul li a {
     display: none;
   }
+
   .cursos-online .derecha .img-desktop {
     display: none;
   }
@@ -1796,6 +1901,9 @@ display: block;
     display: block;
     width: 100%;
     margin: 0;
+  }
+  .verMas-ul{
+    padding: 0;
   }
   label {
     font-size: 14px;
@@ -1824,6 +1932,27 @@ display: block;
     line-height: 16px;
     margin-bottom: 16px;
   }
+  .footer .izquierda {
+    margin-left: 4%;
+    width: 60%;
+}
+.footer .centro {
+  text-align: end;
+  margin-right: 16px;
+  width: 80px;
+}
+.footer .derecha {
+  margin-left: 4%;
+  width: auto;
+}
+.redes-iconos{
+  display: flex;
+  flex-direction: row;
+}
+.footer .derecha .copyright{
+  margin: 7px 0 0 0;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -1831,114 +1960,3 @@ display: block;
     width: 33.33%;
   }
 }
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background: #945B3E;
-  padding-top: 46px;
-  padding-bottom: 35px;
-  padding-left: 200px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 5% 3%;
-}
-.footer .izquierda img {
-  height: 95px;
-  width: 95px;
-  margin-bottom: 30px;
-}
-.footer .izquierda .nombre-contacto {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-  margin-bottom: 4%;
-}
-.footer .izquierda p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-  margin: 0%;
-}
-.footer .centro p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 240%;
-  color: #FFFFFF;
-  margin: 0%;
-}
-.footer .derecha {
-  width: 33%;
-}
-.footer .derecha .ordenar-iconos {
-  display: flex;
-  align-items: center;
-}
-.footer .derecha .ordenar-iconos img {
-  margin-right: 3%;
-  margin-left: 3%;
-  height: 19px;
-  width: 19px;
-}
-.footer .derecha .redes {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 240%;
-  color: #FFFFFF;
-  margin: 0%;
-}
-.footer .derecha p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 240%;
-  color: #FFFFFF;
-  margin: 0%;
-}
-.footer .derecha .copyright {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #FFFFFF;
-  margin-top: 40px;
-  margin-right: 199px;
-}
-
-
-/* .footer {
-  display: flex;
-  background: #945B3E;
-  padding: 5% 3%;
-}
-.footer .izquierda {
-  width: 50%;
-}
-.footer .centro {
-  width: 50%;
-}
-.footer .centro p {
-  text-align: end;
-}
-.footer .derecha {
-  width: 100%;
-  display: block;
-} */
