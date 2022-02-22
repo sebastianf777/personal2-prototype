@@ -578,6 +578,8 @@ height: 27px;
   color: #945B3E;
   width: 472px;
   height: 195px;
+  text-align: end;
+  margin-right: 1.5vw;
 }
 .titulo .izquierda .img-mobile {
   display: none;

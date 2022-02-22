@@ -122,7 +122,7 @@
     }
   }
   on('click', '.home_link .nav-link', Home, true)
-  on('click', '.home_link .logo_home', Home, true)
+  on('click', '.home_link .home_link_child', Home, true)
 
   /**
    * Activate/show sections on load with hash links
