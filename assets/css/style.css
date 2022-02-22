@@ -750,6 +750,7 @@ height: 27px;
 .cursos-online .izquierda .titulo-curso {
   display: block;
   text-align: center;
+  position: relative;
 }
 .cursos-online .izquierda .titulo-curso .parrafo-mobile {
   display: none;
@@ -1623,12 +1624,16 @@ display: block;
   }
   .titulo {
     display: block;
-    height: 310px;
+    height: auto;
+    margin-bottom: 30px;
   }
   .titulo .izquierda {
     margin-left: 0;
     margin-bottom: 0;
+    margin-top: 80px;
+
   }
+
   .titulo .izquierda .parrafo-titulo {
     display: none;
   }
@@ -1642,14 +1647,14 @@ display: block;
   .titulo .derecha .img-mobile {
     position: absolute;
     width: 276px;
-    height: 128px;
-    top: 305px;
+    height: 100px;
+    top: calc(48vw - 20px);;
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     font-family: 'Prata';
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 33px;
     display: flex;
     align-items: center;
@@ -1659,8 +1664,7 @@ display: block;
   }
   .sobre-mi {
     display: block;
-    height: 230px;
-    background-color: #C38F78;
+
   }
   .sobre-mi .izquierda {
     display: block;
@@ -1676,6 +1680,7 @@ display: block;
   }
   .sobre-mi .derecha {
     margin: 0;
+    position: relative;
   }
   .sobre-mi .derecha .titulo-sobre-mi {
     display: none;
@@ -1688,7 +1693,7 @@ display: block;
     position: absolute;
     width: 100%;
     left: 56px;
-    top: 598px;
+    top: calc(-23vw - 20px);
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     padding: 1% 5%;
@@ -1765,10 +1770,7 @@ display: block;
   }
   .cursos-online .izquierda .titulo-curso .parrafo-mobile {
     display: flex;
-    position: absolute;
-    left: 0%;
-    right: 45.28%;
-    top: 92%;
+    margin-top: 20px;
     background: #EDDED6;
     border-radius: 0px 30px 30px 0px;
     width: 227px;
