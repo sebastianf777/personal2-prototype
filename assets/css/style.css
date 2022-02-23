@@ -689,6 +689,7 @@ section .container {
   width: 12vw;
 
 }
+
 .atomo-4 {
   position: absolute;
   top: -26vw;
@@ -701,12 +702,13 @@ section .container {
 .atomo-4 img {
   width: 15vw;
 }
+
 .atomo-5 {
   position: absolute;
   top: -15vw;
   right: 0;
   z-index: 60;
- 
+
 }
 
 .atomo-5 img {
@@ -784,7 +786,7 @@ section .container {
 
 .sobre-mi .home_link ul li a {
   position: relative;
-    z-index: 500;
+  z-index: 500;
   background: rgba(201, 177, 165, 1);
   border-radius: 30px;
   width: 333px;
@@ -1638,6 +1640,15 @@ label {
   .logo-responsive-show {
     display: block;
   }
+  .cursos-online .derecha img {
+    margin: 0;
+width: 100%;
+  }
+  .cursos-online .izquierda {
+
+    margin-left: 7%;
+
+}
 }
 
 @media (max-width: 768px) {
@@ -1674,13 +1685,14 @@ label {
 
   .titulo {
     display: block;
+    margin-bottom: 14vh;
   }
 
   .titulo .izquierda {
     margin-left: 0;
     margin-bottom: 0;
     width: auto;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 
   .titulo .izquierda .parrafo-titulo {
@@ -1696,15 +1708,16 @@ label {
     position: relative;
   }
 
-  .titulo .derecha .img-desktop {
+  /* .titulo .derecha .img-desktop {
     display: none;
-  }
+  } */
 
   .titulo .derecha .img-mobile {
     position: absolute;
     width: 344px;
     height: 128px;
-    top: -150px;
+ 
+    top: 47vw;
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     font-family: Prata;
@@ -1719,13 +1732,13 @@ label {
     padding: 5%;
   }
 
-  .atomo-1,
+  /* .atomo-1,
   .atomo-2,
   .atomo-3,
   .atomo-4,
   .atomo-5 {
     display: none;
-  }
+  } */
 
   .sobre-mi {
     display: block;
@@ -1734,8 +1747,11 @@ label {
   .sobre-mi .izquierda {
     display: block;
     width: 100%;
+    padding-left: 0;
   }
-
+  .sobre-mi .izquierda img{
+    max-width: none;
+  }
   .sobre-mi .izquierda .img-mobile {
     display: block;
     width: 100%;
@@ -1796,6 +1812,32 @@ label {
     display: none;
   }
 
+  .atomo-1{
+    top: 52vw;
+    left: -1vw;
+  }
+  .atomo-1 img{
+    width: 35vh;
+  }
+  .atomo-2{
+    top: 40vw;
+  }
+  .atomo-2 img{
+    width: 20vh;
+  }
+   .atomo-4{
+    top: -36vw;
+    right: 6vw;
+    transform: rotate(-16deg);
+   }
+   .atomo-5{
+    top: -28vw;
+    right: -2vw;
+    transform: rotate(-14deg);
+   }
+   .atomo-5 img {
+    width: 19vw;
+}
   .mis-servicios .imagen-servicios {
     margin: 0;
   }
@@ -1824,6 +1866,12 @@ label {
 
   .cursos-online {
     display: block;
+  }
+
+  .cursos-online .derecha img {
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .cursos-online .izquierda {
@@ -1864,8 +1912,11 @@ label {
     display: block;
   }
 
+
+
   .cursos-online .derecha .img-desktop {
     display: none;
+    
   }
 
   .cursos-online .derecha .img-mobile {
@@ -1998,13 +2049,12 @@ label {
   .titulo {
     display: block;
     height: auto;
-    margin-bottom: 30px;
   }
 
   .titulo .izquierda {
     margin-left: 0;
     margin-bottom: 0;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 
   }
 
@@ -2017,15 +2067,16 @@ label {
     width: 100%;
   }
 
-  .titulo .derecha .img-desktop {
+  /* .titulo .derecha .img-desktop {
     display: none;
-  }
+  } */
 
   .titulo .derecha .img-mobile {
     position: absolute;
+    z-index: 1;
     width: 276px;
     height: 100px;
-    top: -110px;
+
     background: #F8F2EF;
     border-radius: 100px 0px 0px 100px;
     font-family: 'Prata';
@@ -2048,6 +2099,7 @@ label {
   .sobre-mi .izquierda {
     display: block;
     width: 100%;
+    padding-left: 0;
   }
 
   .sobre-mi .izquierda .img-mobile {
